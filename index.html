@@ -10,47 +10,184 @@
     <h1 id="title" class="has-text-centered is-size-3 has-text-black-bis has-text-weight-bold">
       Survey Form
     </h1>
-    <div class="columns is-desktop is-centered">
-      <div class="column is-three-fifths">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-6">
         <section class="section has-text-centered has-background-white">
           <p id="description">Let us know how we can improve freeCodeCamp</p>
           <br>
-          <div class="column is-half is-offset-4">
+          <div class="column">
           <form id="survey-form">
             <div class="field is-horizontal">
-              <div class="field-label is-normal">
+              <div class="field-label is-small">
                 <label id="name-label" class="label">* Name: </label>
               </div>
               <div class="field-body">
                 <div class="field is-narrow">
-                  <p class="control">
-                    <input id="name" class="input" type="text" placeholder="Enter your name" required>
-                  </p>
+                  <div class="control">
+                    <input id="name" name="name" class="input is-small" type="text" placeholder="Enter your name" required>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="field is-horizontal">
-              <div class="field-label is-normal">
+              <div class="field-label is-small">
                 <label id="email-label" class="label">* Email: </label>
               </div>
               <div class="field-body">
                 <div class="field is-narrow">
-                  <p class="control">
-                    <input id="email" class="input" type="email" placeholder="Enter your email" required>
-                  </p>
+                  <div class="control">
+                    <input id="email" name="email" class="input is-small" type="email" placeholder="Enter your email" required>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="field is-horizontal">
-              <div class="field-label is-normal">
+              <div class="field-label is-small">
                 <label id="number-label" class="label">* Age: </label>
               </div>
               <div class="field-body">
                 <div class="field is-narrow">
-                  <p class="control">
-                    <input id="number" class="input" type="number" placeholder="Age" min="12" max="100" required>
-                  </p>
+                  <div class="control">
+                    <input id="number" name="age" class="input is-small" type="number" placeholder="Age" min="12" max="100" required>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-small">
+                <label class="label">Which option best describes your current role?</label>
+              </div>
+              <div class="field-body">
+                <div class="field is-narrow">
+                  <div class="control">
+                    <div class="select is-fullwidth is-small">
+                      <select id="dropdown" name="current_role">
+                        <option value='none' disabled>Select an option</option>
+                        <option value="1" selected>Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer not to say</option>
+                        <option value="5">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-small">
+                <label class="label">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+              </div>
+              <div class="field-body">
+                <div class="field is-narrow">
+                  <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="question" value="Definitely" required>
+                      Definitely
+                    </label> <br>
+                    <label class="radio">
+                      <input type="radio" name="question" value="Maybe" required>
+                      Maybe
+                    </label> <br>
+                    <label class="radio">
+                      <input type="radio" name="question" value="Not sure" required>
+                      Not sure
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-small">
+                <label class="label">What do you like most in FCC:</label>
+              </div>
+              <div class="field-body">
+                <div class="field is-narrow">
+                  <div class="control">
+                    <div class="select is-fullwidth is-small">
+                      <select id="dropdown" name="like_most_in_fcc">
+                        <option selected disabled>Select an option</option>
+                        <option value="1">Challanges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open Source</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-small">
+                <label class="label">Things that should be improved in the future (Check all that apply):</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="fe">
+                      Front-end Projects
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="be">
+                      Back-end Projects
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="dv">
+                      Data Visualization
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="cl">
+                      Challenges
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="os">
+                      Open Source Community
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="gh">
+                      Gitter help rooms
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="vd">
+                      Videos
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="cm">
+                      City Meetups
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="wk">
+                      Wiki
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="fr">
+                      Forum
+                    </label> <br>
+                    <label class="checkbox">
+                      <input type="checkbox" name="things_to_improve" value="ac">
+                      Additional Courses
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-small">
+                <label id="number-label" class="label">Any Comments or Suggestions?</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <textarea class="textarea is-small" name="comment" rows="2" placeholder="Enter your comment here..."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="field">
+              <div class="control has-text-centered">
+                <button id="submit" class="button is-info is-normal" type="submit">Submit</button>
               </div>
             </div>
           </form>

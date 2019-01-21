@@ -1,7 +1,21 @@
 body {
   background-color: hsl(171, 100%, 41%);
+  height: 100%;
 }
 
 .footer {
   background-color: hsl(171, 100%, 41%);
+}
+
+.columns {
+  margin-top: 10px;
+}
+
+form {
+  margin: 0 auto;
+  width: auto;
+  align-content: center!important;
+  align-items: center!important;
+  align-self: center!important;
+  display: inline-block!important;
 }
